@@ -6,7 +6,7 @@
 	"homepage": "./",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/JovelLabay/autoupdater-demo"
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.2",
@@ -25,7 +25,7 @@
 	"scripts": {
 		"start": "concurrently \"cross-env BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
 		"build:prod": "react-scripts build && electron-builder --win",
-		"build:publish": "set GH_TOKEN=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 && react-scripts build && electron-builder --win --publish always"
+		"build:publish": "set GH_TOKEN=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 && react-scripts build && electron-builder --win --publish always"
 	},
 	"build": {
 		"appId": "com.autoupdater.demo",
